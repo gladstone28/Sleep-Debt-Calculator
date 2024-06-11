@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sleep Debt Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sleep Debt Calculator</h1>
+        <form id="sleep-form">
+            <div class="form-group">
+                <label for="monday">Monday:</label>
+                <input type="number" id="monday" name="monday" value="8">
+            </div>
+            <div class="form-group">
+                <label for="tuesday">Tuesday:</label>
+                <input type="number" id="tuesday" name="tuesday" value="7">
+            </div>
+            <div class="form-group">
+                <label for="wednesday">Wednesday:</label>
+                <input type="number" id="wednesday" name="wednesday" value="8">
+            </div>
+            <div class="form-group">
+                <label for="thursday">Thursday:</label>
+                <input type="number" id="thursday" name="thursday" value="5">
+            </div>
+            <div class="form-group">
+                <label for="friday">Friday:</label>
+                <input type="number" id="friday" name="friday" value="8">
+            </div>
+            <div class="form-group">
+                <label for="saturday">Saturday:</label>
+                <input type="number" id="saturday" name="saturday" value="7">
+            </div>
+            <div class="form-group">
+                <label for="sunday">Sunday:</label>
+                <input type="number" id="sunday" name="sunday" value="8">
+            </div>
+            <button type="button" onclick="calculateSleepDebt()">Calculate Sleep Debt</button>
+        </form>
+        <div id="result" class="result"></div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
